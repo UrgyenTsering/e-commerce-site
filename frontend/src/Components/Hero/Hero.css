@@ -1,0 +1,69 @@
+.hero{
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display:flex;
+    height:100vh;
+}
+
+.hero-left{
+    display: flex;
+    flex:1; /*it is normally combination of flex-grow, flex-shrink, and flex-basis. but since only one value is there, it shows flex-grow which will cover 2 times space than right div of image */
+    flex-direction: column;
+    gap:20px;
+    margin:20px;
+    padding-left:180px;
+    line-height:1.1 ;/* used to give space to each lines of text*/
+    
+}
+
+.hero-left h2{
+    color:black;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p{
+    color:black;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero-hand-icon{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+.hero-hand-icon img{
+    width:105px;
+}
+
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    width:310px;
+    height:70px;
+    border-radius: 75px;
+    margin-top:30px;
+    background-color: #ff4141;
+    color:white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+hero-right{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-right img{
+    width: 600px;
+        -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(5px 5px 5px #666666);
+    height:800px;
+    background-position: no-reapeat;
+}
