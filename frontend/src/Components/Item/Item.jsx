@@ -1,7 +1,7 @@
 import React from "react";
 import "./Item.css";
 const Item = (props) => {
-const name='urgyen'
+  const name1='urgyen'
   return (
     <div className="item">
       <img src={props.image} alt="" />
