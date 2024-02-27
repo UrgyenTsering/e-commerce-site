@@ -1,9 +1,6 @@
 import React from "react";
 import "./Item.css";
 const Item = (props) => {
-  const pro='mobile'
-  const pro2='TV'
-  const pro3='camera'
   return (
     <div className="item">
       <img src={props.image} alt="" />
