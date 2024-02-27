@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="nav-logo">
           <img src={logo} alt="nav-logo" />
-          <p>Shoppers</p>
+          <p>Shopper</p>
         </div>
         <ul className="nav-menu">
           <li onClick={()=>{setMenu("shop");}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>} </li> {/* A React Router Link component that creates a link to the root path ("/"). */}
