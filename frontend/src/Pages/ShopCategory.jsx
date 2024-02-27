@@ -20,7 +20,7 @@ const { all_product } = useContext(ShopContext);
       <div className="shopcategory-products">
         {
           all_product.map((item,i)=>{
-            if(props.category===item.category){
+            if(props.category===item.category){ //props.category is value that comes from the App.jsx and item.category is value that from context/all_product.js
               return <Item key={i}
               id={item.id}
               name={item.name}
