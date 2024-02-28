@@ -21,8 +21,8 @@ function App() {
           <Route path="/mens" element={<ShopCategory banner={men_banner} category="men" />} /> {/* category and banner here is property that can be used later in child component. When user go to mens' path, it passes men_banner photo */}
           <Route path="/womens" element={<ShopCategory banner={women_banner} category="women" />} /> {/* category and banner here is property that can be used later in child component. When user go to womens' path, it passes women_banner photo */}
           <Route path="/kids" element={<ShopCategory banner={kid_banner} category="kid" />} />
-          <Route path="/product" element={<Product />}>
-            <Route path=":productId" element={<Product />} />
+          <Route path="product" element={<Product />}>
+            <Route path=":productId" element={<Product />}></Route>
           </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSingup />} />
