@@ -1,10 +1,12 @@
-import React from 'react'
-import './RelatedProducts.css'
-import data_product from '../Assets/data'
+import React from "react";
+import "./RelatedProducts.css";
+import Item from "../Item/Item";
+import data_product from "../Assets/data";
 const RelatedProducts = () => {
   return (
-    <div className='ralatedproducts'>
+    <div className="relatedproducts">
       <h1>Related Products</h1>
+      <hr />
       <div className="relatedproducts-item">
         {data_product.map((item, idx) => {
           return (
@@ -20,7 +22,7 @@ const RelatedProducts = () => {
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RelatedProducts
+export default RelatedProducts;
