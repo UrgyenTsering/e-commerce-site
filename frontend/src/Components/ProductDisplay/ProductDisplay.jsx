@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import "./ProductDisplay.css";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
+import { ShopContext } from "../../Context/ShopContext";
 
 const ProductDisplay = (props) => {
   const { product } = props; // product is reffered from product.jsx and using though props
+  const {addToCart}=useContext(ShopContext);//using useContext api, the addToCart function is imported from shopContext
   return (
     <div className="productdisplay">
       <div className="productdisplay-left">
@@ -51,8 +53,7 @@ const ProductDisplay = (props) => {
             <div>XXL</div>
           </div>
         </div>
-        <button
-        
+        <button onClick={()=>{addToCart(product.id)}} // Here, addToCart function called and product.id from app.js is called
         >
           ADD TO CART
         </button>
